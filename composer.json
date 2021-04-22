@@ -1,6 +1,6 @@
 {
-    "name": "pestphp/pest-plugin-template",
-    "description": "My awesome plugin",
+    "name": "thled/pest-plugin-shorthands",
+    "description": "Add shorthand functions for skipping and focusing tests.",
     "keywords": [
         "php",
         "framework",
@@ -8,7 +8,10 @@
         "unit",
         "test",
         "testing",
-        "plugin"
+        "plugin",
+        "shorthand",
+        "xit",
+        "xtest"
     ],
     "license": "MIT",
     "require": {
@@ -18,10 +21,10 @@
     },
     "autoload": {
         "psr-4": {
-            "Pest\\PluginName\\": "src/"
+            "Thled\\Shorthands\\": "src/"
         },
         "files": [
-            "src/Autoload.php"
+            "src/Shorthands.php"
         ]
     },
     "require-dev": {
