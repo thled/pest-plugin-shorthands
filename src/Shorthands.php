@@ -4,10 +4,9 @@ declare(strict_types=1);
 
 namespace Thled\Shorthands;
 
-use PHPUnit\Framework\TestCase;
+use Pest\PendingObjects\TestCall;
 
-/** @return TestCase */
-function example(string $argument): TestCase
+function xit(string $description, \Closure $closure = null): TestCall
 {
-    return test()->example(...func_get_args());
+    return it($description, $closure)->skip();
 }
