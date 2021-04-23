@@ -4,14 +4,27 @@ This repository contains the Pest Plugin *Shorthands*.
 
 > If you want to start testing your application with Pest, visit the main **[Pest Repository](https://github.com/pestphp/pest)**.
 
-- Explore the docs: **[pestphp.com/docs/plugins/creating-plugins »](https://pestphp.com/docs/plugins/creating-plugins)**
+## Overview
+
+The Shorthands Plugin for Pest provides additional functions for skipping and focusing tests.
+These additional functions are just like the test functions but with a single letter prefix for quick usage.
+
+## Installation
+
+Install the plugin using Composer:
+
+```shell
+$ composer require thled/pest-plugin-shorthands --dev
+```
 
 ## Usage
 
 Just add an `x` prefix on the test function to skip the test. I.e.
 
 ```php
-xit('has home', function () {
+use function Thled\Shorthands\xit;
+
+xit('should be skipped', function () {
 // ...
 });
 ```
