@@ -14,5 +14,11 @@ xit('skips with "xit" shorthand')
 it('has shorthand "xtest" to skip test')
     ->assertTrue(function_exists('Thled\Shorthands\xtest'));
 
-xtest('skips with "xtest" shorthand')
+xtest('test skips with "xtest" shorthand')
     ->assertTrue(false);
+
+it('has shorthand "fit" to focus test')
+    ->assertTrue(function_exists('Thled\Shorthands\fit'));
+
+it('has shorthand "ftest" to focus test')
+    ->assertTrue(function_exists('Thled\Shorthands\ftest'));
