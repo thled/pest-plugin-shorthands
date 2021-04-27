@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-use function Thled\Shorthands\xit;
-
 xit('skips with "xit" shorthand', function () {
     expect(false)->toBeTrue();
 });

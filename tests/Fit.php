@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-use function Thled\Shorthands\fit;
-
 fit('focus with "fit" shorthand', function () {
     expect(true)->toBeTrue();
 });

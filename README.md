@@ -22,8 +22,6 @@ $ composer require thled/pest-plugin-shorthands --dev
 Just add an `x` prefix on the test function to skip the test. I.e.
 
 ```php
-use function Thled\Shorthands\xit;
-
 xit('should be skipped', function () {
 // ...
 });
@@ -34,7 +32,7 @@ Shorthands for skipping:
 - `xit()`
 - `xtest()`
 
-Same goes for running one test only by prefixing it with `f`.
+Same goes for focusing a test by prefixing it with `f`.
 
 Shorthands for focusing:
 
