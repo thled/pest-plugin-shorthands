@@ -45,7 +45,13 @@
         "lint": "php-cs-fixer fix -v",
         "test:lint": "php-cs-fixer fix -v --dry-run",
         "test:types": "phpstan analyse --ansi",
-        "test:unit": "pest --colors=always",
+        "test:unit": [
+            "pest --colors=always --testsuite=default",
+            "pest --colors=always --testsuite=xit",
+            "pest --colors=always --testsuite=xtest",
+            "pest --colors=always --testsuite=fit",
+            "pest --colors=always --testsuite=ftest"
+        ],
         "test": [
             "@test:lint",
             "@test:types",

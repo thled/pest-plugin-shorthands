@@ -5,7 +5,19 @@
 >
     <testsuites>
         <testsuite name="default">
-            <directory suffix=".php">./tests</directory>
+            <directory suffix=".php">./tests/Shorthands.php</directory>
+        </testsuite>
+        <testsuite name="xit">
+            <directory suffix=".php">./tests/Xit.php</directory>
+        </testsuite>
+        <testsuite name="xtest">
+            <directory suffix=".php">./tests/Xtest.php</directory>
+        </testsuite>
+        <testsuite name="fit">
+            <directory suffix=".php">./tests/Fit.php</directory>
+        </testsuite>
+        <testsuite name="ftest">
+            <directory suffix=".php">./tests/Ftest.php</directory>
         </testsuite>
     </testsuites>
     <coverage processUncoveredFiles="true">
